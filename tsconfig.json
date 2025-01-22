@@ -83,6 +83,6 @@
         "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
     },
     "exclude": [
-        "test"
+        "test", "jest.config.ts"
     ]
 }

@@ -1,6 +1,5 @@
 import { Container } from "./Container";
-import { ReflectiveContainer } from "./ReflectiveContainer";
-import { ServiceNotDefinedException } from "./ServiceNotDefinedException";
+import { SingletonContainer } from "./SingletonContainer";
 
-export { Container, ReflectiveContainer, ServiceNotDefinedException };
-export default { Container, ReflectiveContainer, ServiceNotDefinedException };
+export { Container, SingletonContainer };
+export default { Container, SingletonContainer };

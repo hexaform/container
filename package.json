@@ -1,24 +1,28 @@
 {
     "name": "@hexaform/container",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Dependency injection container",
     "main": "src/index.ts",
     "scripts": {
         "build": "rm -rf dist/* && tsc && cp src/package.dist.json dist/package.json && cp README.md dist/README.md",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "publish": "cd dist && npm publish --access=public",
+        "test": "jest"
     },
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/hexaform/container.git"
     },
-    "author": "",
+    "author": "Igor Stojadinović <mightytroll@gmail.com> (https://www.linkedin.com/in/igorstojadinovic/)",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/hexaform/container/issues"
     },
     "homepage": "https://github.com/hexaform/container#readme",
     "devDependencies": {
+        "@types/jest": "^29.5.14",
         "@types/node": "^22.7.5",
+        "ts-jest": "^29.2.5",
+        "ts-node": "^10.9.2",
         "typescript": "^5.6.3"
     }
 }
