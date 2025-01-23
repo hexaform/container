@@ -1,3 +1,5 @@
+import { AbstractConstructor } from "./AbstractConstructor";
+
 export abstract class Container {
-    abstract resolve<Service>(service: Function & { readonly prototype: Service }): Service;
+    abstract resolve<Service>(service: AbstractConstructor<Service>): Service;
 }
